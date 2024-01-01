@@ -1,10 +1,10 @@
-'use client'
+"use client"
 import styles from '@/app/page.module.css'
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-export default async function AddPost(){
+export default function AddPost(){
     const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const router = useRouter()
@@ -41,6 +41,7 @@ export default async function AddPost(){
         <main className={styles.main}>
         <Link href={'/'}>View Feed
             </Link>
+            {/* shrey */}
             
         <h1>Add Post</h1>
       
